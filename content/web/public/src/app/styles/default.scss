@@ -1,0 +1,19 @@
+// $s3-path: "/* @echo URL_BUCKET */" !default;
+// $font-primary: 'Gobold Thin', Arial, Tahoma, sans-serif !default;
+// $font-icon: "FontAwesome", sans-serif !default;
+// $font-size: 14px !default;
+// $default-color: #fff !default;
+// $default-light-color: #000 !default;
+// $default-dark-color: darken($default-color, 20%) !default;
+// $accent-color: #000 !default;
+// $accent-light-color: lighten($accent-color, 3%) !default;
+// $accent-dark-color: darken($accent-color, 3%) !default;
+// $important-color: #f60000 !default;
+// $error-color: #b51c27 !default;
+// $information-color: #25a9d8 !default;
+$projet_url: "http://www-local.quantumstore.com.mx/";
+
+@import "typography";
+@import "theme/include";
+@import "main";
+@import "footer";

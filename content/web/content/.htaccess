@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|projects|fonts|bootstrap|styles|scripts|robots\.txt|healthcheck\.html|sitemap\.xml)
+RewriteRule ^(.*)$ index.php?/$1 [L]
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
+php_value memory_limit 32M
+
+<IfModule mod_php5.c>
+  php_value short_open_tag 1
+</IfModule>

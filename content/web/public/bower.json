@@ -1,0 +1,25 @@
+{
+  "name": "fountain-inject",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^4.7.0",
+    "simple-line-icons": "~2.2.3",
+    "slick-carousel": "^1.8.1",
+    "vanilla-lazyload": "^15.1.1",
+    "jquery.countdown": "^2.2.0",
+    "jquery-touchswipe": "^1.6.19",
+    "instafeed.js": "^1.4.1",
+    "bootstrap-sweetalert": "^1.0.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css"
+      ]
+    }
+  },
+  "devDependencies": {}
+}

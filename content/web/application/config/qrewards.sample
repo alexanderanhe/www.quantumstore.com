@@ -1,0 +1,18 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+$config = array();
+
+// URLs
+$config['SLUG_APP'] = "quantumstore";
+$config['API_QREWARDS_URI'] = "https://api.qrewards.mx/";
+$config['API_BASE_URI'] = 'http://' . getenv('REMOTE_HOST') . ':1600/';
+$config['HOST_URI'] = 'http://www-local.quantumstore.com.mx/';
+$config['RESOURCE_PATH'] = 'http://' . getenv('REMOTE_HOST') . ':3006/app/resources';
+$config['RESOURCE_PATH_PROD'] = 'https://www.quantumstore.com.mx/projects/qrewards';
+$config['CONTENT_PATH'] = 'http://' . getenv('REMOTE_HOST') . ':3006/';
+$config['CONTENT_PATH_PROD'] = 'https://www.quantumstore.com.mx/';
+$config['OPENPAY_ID'] = 'mqfufzvnqrp2nyezxoub';
+$config['OPENPAY_PUBLIC'] = 'pk_352c5f7f2eb24f0593b6225822f3547b';
+$config['OPENPAY_ENV'] = false;
+$config['PRODUCTION'] = false;

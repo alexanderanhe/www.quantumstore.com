@@ -1,0 +1,147 @@
+.tt-logo {
+  img {
+    height: auto;
+    max-height: 35px;
+  }
+}
+
+.tt-back-to-top {
+  bottom: 60px;
+}
+
+#Modalnewsletter {
+  .bb-backround {
+    background-color: rgba(1, 0, 0, 0.43);
+  }
+  .modal-header {
+    height: 1px;
+    padding: 0;
+    top: -70px;
+  }
+}
+
+.tt-desctop-menu .tt-megamenu-col-01 .dropdown-menu {
+  left: auto;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, 0);
+}
+
+.modal-backdrop.in {
+  opacity: 0.87;
+}
+
+.error_login {
+  padding-bottom: 15px;
+}
+
+@mixin no-select-user {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.detail {
+  @include no-select-user;
+}
+
+#newsletterformModal {
+  .error {
+    width: 100%;
+  }
+  .btnNewsletterModal {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .btn-add-button {
+    width: 100vw !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+}
+
+/* LOADER PROCCES REQUEST */
+.process-request {
+  display: none;
+  position: fixed;
+  border: 1px solid #ccc;
+  background: rgba(254, 254, 254, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 40vh 0;
+
+  .loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    &:before, &:after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 10px);
+      background-color: #3498db;
+      animation: squaremove 1s ease-in-out infinite;
+    }
+    &:after {
+      bottom: 0;
+      animation-delay: 0.5s;
+    }
+  }
+  h5 {
+    text-align: center
+  }
+}
+
+@keyframes squaremove{
+  0%, 100%{
+    -webkit-transform: translate(0,0) rotate(0);
+    -ms-transform: translate(0,0) rotate(0);
+    -o-transform: translate(0,0) rotate(0);
+    transform: translate(0,0) rotate(0);
+  }
+
+  25%{
+    -webkit-transform: translate(40px,40px) rotate(45deg);
+    -ms-transform: translate(40px,40px) rotate(45deg);
+    -o-transform: translate(40px,40px) rotate(45deg);
+    transform: translate(40px,40px) rotate(45deg);
+  }
+
+  50%{
+    -webkit-transform: translate(0px,80px) rotate(0deg);
+    -ms-transform: translate(0px,80px) rotate(0deg);
+    -o-transform: translate(0px,80px) rotate(0deg);
+    transform: translate(0px,80px) rotate(0deg);
+  }
+
+  75%{
+    -webkit-transform: translate(-40px,40px) rotate(45deg);
+    -ms-transform: translate(-40px,40px) rotate(45deg);
+    -o-transform: translate(-40px,40px) rotate(45deg);
+    transform: translate(-40px,40px) rotate(45deg);
+  }
+}
+
+.row:before, .row:after {
+  display: inline-block;
+}
